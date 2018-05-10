@@ -1,0 +1,7 @@
+C:/Users/administrator/Documents/GitHub/ListsTest/build_win/CMakeFiles/INSTALL.dir
+C:/Users/administrator/Documents/GitHub/ListsTest/build_win/CMakeFiles/ALL_BUILD.dir
+C:/Users/administrator/Documents/GitHub/ListsTest/build_win/CMakeFiles/ZERO_CHECK.dir
+C:/Users/administrator/Documents/GitHub/ListsTest/build_win/src/lib/CMakeFiles/ListsTestLib.dir
+C:/Users/administrator/Documents/GitHub/ListsTest/build_win/src/lib/CMakeFiles/INSTALL.dir
+C:/Users/administrator/Documents/GitHub/ListsTest/build_win/src/app/CMakeFiles/ListsTest.dir
+C:/Users/administrator/Documents/GitHub/ListsTest/build_win/src/app/CMakeFiles/INSTALL.dir
