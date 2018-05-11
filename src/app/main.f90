@@ -5,10 +5,17 @@
 
     implicit none
 
+    type shape
+        integer :: id
+        real :: posx, posy
+        logical :: filled
+    end type shape
+    
     integer i
     type(list) :: simple_list
     type(integerList) :: int_list
     integer values(10)
+    type(shape) :: square
 
     !List
     do i=1, 10
@@ -20,6 +27,7 @@
     call simple_list%add('A')
     call simple_list%add('B')
     call simple_list%add('C')
+    call simple_list%addValue(square)
     call simple_list%printvalues()
 
     !integer list (derived from the abstract list)

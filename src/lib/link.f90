@@ -91,5 +91,11 @@ contains
     constructor%next => next
     allocate(constructor%value, source=value)
   end function constructor
+  
+  function destructor(this)
+    class(link) :: this
+    if (associated(this%value)) nullify(this%value)
+    if (associated(this%next)) nullify(this%next)
+  end function destructor
 
 end module link_mod
