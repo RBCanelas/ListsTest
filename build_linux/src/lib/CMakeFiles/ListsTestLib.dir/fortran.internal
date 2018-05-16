@@ -1,0 +1,7 @@
+# The fortran modules provided by this target.
+provides
+ abstract_list_mod
+ integer_list_mod
+ link_mod
+ list_mod
+ types_mod

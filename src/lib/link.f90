@@ -17,6 +17,9 @@
 !! link.f90
 
 module link_mod
+
+  use types_mod
+
   private
   public :: link
   type link
@@ -60,10 +63,12 @@ contains
   select type(v => this%value)
   type is (integer)
     print *, v
-  type is (character(*)) 
+  type is (character(*))
    print *, v(1:1)
   type is (real)
     print *, v
+  type is (shape)
+    call v%print()
   class default
     stop 'printLink: unexepected type for link'
   end select
@@ -91,7 +96,7 @@ contains
     constructor%next => next
     allocate(constructor%value, source=value)
   end function constructor
-  
+
   function destructor(this)
     class(link) :: this
     if (associated(this%value)) nullify(this%value)
