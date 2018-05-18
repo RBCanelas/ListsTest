@@ -25,10 +25,14 @@
 				<Tool Name="VFManifestTool"/></Configuration></Configurations>
 	<Files>
 		<Filter Name="ListsTestLib">
+		<File RelativePath="C:\Users\administrator\Documents\GitHub\ListsTest\src\lib\abstract_container_array.f90"/>
 		<File RelativePath="C:\Users\administrator\Documents\GitHub\ListsTest\src\lib\abstract_list.f90"/>
+		<File RelativePath="C:\Users\administrator\Documents\GitHub\ListsTest\src\lib\container.f90"/>
 		<File RelativePath="C:\Users\administrator\Documents\GitHub\ListsTest\src\lib\integer_list.f90"/>
 		<File RelativePath="C:\Users\administrator\Documents\GitHub\ListsTest\src\lib\link.f90"/>
-		<File RelativePath="C:\Users\administrator\Documents\GitHub\ListsTest\src\lib\list.f90"/></Filter>
+		<File RelativePath="C:\Users\administrator\Documents\GitHub\ListsTest\src\lib\list.f90"/>
+		<File RelativePath="C:\Users\administrator\Documents\GitHub\ListsTest\src\lib\shape_array.f90"/>
+		<File RelativePath="C:\Users\administrator\Documents\GitHub\ListsTest\src\lib\types.f90"/></Filter>
 		<File RelativePath="C:\Users\administrator\Documents\GitHub\ListsTest\src\lib\CMakeLists.txt">
 			<FileConfiguration Name="RELEASE|x64">
 				<Tool Name="VFCustomBuildTool" CommandLine="setlocal&#xA;&quot;C:\Program Files\CMake\bin\cmake.exe&quot; -HC:/Users/administrator/Documents/GitHub/ListsTest -BC:/Users/administrator/Documents/GitHub/ListsTest/build_win --check-stamp-file C:/Users/administrator/Documents/GitHub/ListsTest/build_win/src/lib/CMakeFiles/generate.stamp&#xA;if %errorlevel% neq 0 goto :cmEnd&#xA;:cmEnd&#xA;endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone&#xA;:cmErrorLevel&#xA;exit /b %1&#xA;:cmDone&#xA;if %errorlevel% neq 0 goto :VCEnd" Description="Building Custom Rule C:/Users/administrator/Documents/GitHub/ListsTest/src/lib/CMakeLists.txt" Outputs="C:\Users\administrator\Documents\GitHub\ListsTest\build_win\src\lib\CMakeFiles\generate.stamp" AdditionalDependencies="C:\Users\administrator\Documents\GitHub\ListsTest\src\lib\CMakeLists.txt;C:\Users\administrator\Documents\GitHub\ListsTest\src\lib\CMakeLists.txt;"/></FileConfiguration>

@@ -2,6 +2,7 @@
 module shape_array_mod
 
   use container_mod
+  use types_mod
 
   private
   public :: shapeArray
@@ -11,15 +12,11 @@ module shape_array_mod
     class(container), allocatable, dimension(:) :: contents
     integer :: length
   contains
-    procedure :: initshapeArray
+    procedure :: init => initshapeArray
     procedure :: printArray => printshapeArray
     procedure, non_overridable :: addValue
     generic :: add => addValue
   end type shapeArray
-
-  interface shapeArray
-    procedure constructor ! construct/initialize
-  end interface
 
 contains
 
@@ -27,23 +24,32 @@ contains
   subroutine printshapeArray(this)
     class(shapeArray) :: this
     class(*), pointer :: curr
-
-
+    integer :: i
+    do i=1, this%length
+        curr => this%contents(i)%getValue()
+        select type(curr)
+        type is (integer)
+          print *, curr
+        type is (character(*))
+          print *, curr(1:1)
+        type is (real)
+          print *, curr
+        type is (shape)
+          call curr%print()
+        class is (circle)
+          call curr%print()
+          class default
+          stop 'printArray: unexepected type for container content printing'
+        end select
+    enddo
   end subroutine printshapeArray
 
   subroutine addValue(this, index, value)
     class(shapeArray) :: this
     integer :: index
     class(*) :: value
-
+    call this%contents(index)%storeValue(value)
   end subroutine addValue
-
-  function constructor(entries)
-    class(shapeArray), pointer :: constructor
-    integer :: entries
-    allocate(constructor)
-    call constructor%initshapeArray(entries)
-  end function constructor
 
   subroutine initshapeArray(this,entries)
     class(shapeArray) :: this

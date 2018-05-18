@@ -7,8 +7,8 @@ module abstract_container_array_mod
   public :: container_array
 
   type, abstract :: container_array
-     !private
-     class(container),allocatable, dimension(:) :: contents
+     private
+     class(container), allocatable, dimension(:) :: contents
      integer :: lenght
    contains
      procedure, non_overridable :: addValue
