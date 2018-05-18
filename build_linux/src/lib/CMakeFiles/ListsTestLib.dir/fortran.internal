@@ -1,7 +1,10 @@
 # The fortran modules provided by this target.
 provides
+ abstract_container_array_mod
  abstract_list_mod
+ container_mod
  integer_list_mod
  link_mod
  list_mod
+ shape_array_mod
  types_mod

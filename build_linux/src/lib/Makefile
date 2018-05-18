@@ -171,6 +171,33 @@ ListsTestLib/fast:
 	cd /Users/rbc-laptop/Documents/GitHub/ListsTest/build_linux && $(MAKE) -f src/lib/CMakeFiles/ListsTestLib.dir/build.make src/lib/CMakeFiles/ListsTestLib.dir/build
 .PHONY : ListsTestLib/fast
 
+abstract_container_array.o: abstract_container_array.f90.o
+
+.PHONY : abstract_container_array.o
+
+# target to build an object file
+abstract_container_array.f90.o:
+	cd /Users/rbc-laptop/Documents/GitHub/ListsTest/build_linux && $(MAKE) -f src/lib/CMakeFiles/ListsTestLib.dir/build.make src/lib/CMakeFiles/ListsTestLib.dir/abstract_container_array.f90.o
+.PHONY : abstract_container_array.f90.o
+
+abstract_container_array.i: abstract_container_array.f90.i
+
+.PHONY : abstract_container_array.i
+
+# target to preprocess a source file
+abstract_container_array.f90.i:
+	cd /Users/rbc-laptop/Documents/GitHub/ListsTest/build_linux && $(MAKE) -f src/lib/CMakeFiles/ListsTestLib.dir/build.make src/lib/CMakeFiles/ListsTestLib.dir/abstract_container_array.f90.i
+.PHONY : abstract_container_array.f90.i
+
+abstract_container_array.s: abstract_container_array.f90.s
+
+.PHONY : abstract_container_array.s
+
+# target to generate assembly for a file
+abstract_container_array.f90.s:
+	cd /Users/rbc-laptop/Documents/GitHub/ListsTest/build_linux && $(MAKE) -f src/lib/CMakeFiles/ListsTestLib.dir/build.make src/lib/CMakeFiles/ListsTestLib.dir/abstract_container_array.f90.s
+.PHONY : abstract_container_array.f90.s
+
 abstract_list.o: abstract_list.f90.o
 
 .PHONY : abstract_list.o
@@ -197,6 +224,33 @@ abstract_list.s: abstract_list.f90.s
 abstract_list.f90.s:
 	cd /Users/rbc-laptop/Documents/GitHub/ListsTest/build_linux && $(MAKE) -f src/lib/CMakeFiles/ListsTestLib.dir/build.make src/lib/CMakeFiles/ListsTestLib.dir/abstract_list.f90.s
 .PHONY : abstract_list.f90.s
+
+container.o: container.f90.o
+
+.PHONY : container.o
+
+# target to build an object file
+container.f90.o:
+	cd /Users/rbc-laptop/Documents/GitHub/ListsTest/build_linux && $(MAKE) -f src/lib/CMakeFiles/ListsTestLib.dir/build.make src/lib/CMakeFiles/ListsTestLib.dir/container.f90.o
+.PHONY : container.f90.o
+
+container.i: container.f90.i
+
+.PHONY : container.i
+
+# target to preprocess a source file
+container.f90.i:
+	cd /Users/rbc-laptop/Documents/GitHub/ListsTest/build_linux && $(MAKE) -f src/lib/CMakeFiles/ListsTestLib.dir/build.make src/lib/CMakeFiles/ListsTestLib.dir/container.f90.i
+.PHONY : container.f90.i
+
+container.s: container.f90.s
+
+.PHONY : container.s
+
+# target to generate assembly for a file
+container.f90.s:
+	cd /Users/rbc-laptop/Documents/GitHub/ListsTest/build_linux && $(MAKE) -f src/lib/CMakeFiles/ListsTestLib.dir/build.make src/lib/CMakeFiles/ListsTestLib.dir/container.f90.s
+.PHONY : container.f90.s
 
 integer_list.o: integer_list.f90.o
 
@@ -279,6 +333,33 @@ list.f90.s:
 	cd /Users/rbc-laptop/Documents/GitHub/ListsTest/build_linux && $(MAKE) -f src/lib/CMakeFiles/ListsTestLib.dir/build.make src/lib/CMakeFiles/ListsTestLib.dir/list.f90.s
 .PHONY : list.f90.s
 
+shape_array.o: shape_array.f90.o
+
+.PHONY : shape_array.o
+
+# target to build an object file
+shape_array.f90.o:
+	cd /Users/rbc-laptop/Documents/GitHub/ListsTest/build_linux && $(MAKE) -f src/lib/CMakeFiles/ListsTestLib.dir/build.make src/lib/CMakeFiles/ListsTestLib.dir/shape_array.f90.o
+.PHONY : shape_array.f90.o
+
+shape_array.i: shape_array.f90.i
+
+.PHONY : shape_array.i
+
+# target to preprocess a source file
+shape_array.f90.i:
+	cd /Users/rbc-laptop/Documents/GitHub/ListsTest/build_linux && $(MAKE) -f src/lib/CMakeFiles/ListsTestLib.dir/build.make src/lib/CMakeFiles/ListsTestLib.dir/shape_array.f90.i
+.PHONY : shape_array.f90.i
+
+shape_array.s: shape_array.f90.s
+
+.PHONY : shape_array.s
+
+# target to generate assembly for a file
+shape_array.f90.s:
+	cd /Users/rbc-laptop/Documents/GitHub/ListsTest/build_linux && $(MAKE) -f src/lib/CMakeFiles/ListsTestLib.dir/build.make src/lib/CMakeFiles/ListsTestLib.dir/shape_array.f90.s
+.PHONY : shape_array.f90.s
+
 types.o: types.f90.o
 
 .PHONY : types.o
@@ -319,9 +400,15 @@ help:
 	@echo "... install"
 	@echo "... list_install_components"
 	@echo "... ListsTestLib"
+	@echo "... abstract_container_array.o"
+	@echo "... abstract_container_array.i"
+	@echo "... abstract_container_array.s"
 	@echo "... abstract_list.o"
 	@echo "... abstract_list.i"
 	@echo "... abstract_list.s"
+	@echo "... container.o"
+	@echo "... container.i"
+	@echo "... container.s"
 	@echo "... integer_list.o"
 	@echo "... integer_list.i"
 	@echo "... integer_list.s"
@@ -331,6 +418,9 @@ help:
 	@echo "... list.o"
 	@echo "... list.i"
 	@echo "... list.s"
+	@echo "... shape_array.o"
+	@echo "... shape_array.i"
+	@echo "... shape_array.s"
 	@echo "... types.o"
 	@echo "... types.i"
 	@echo "... types.s"

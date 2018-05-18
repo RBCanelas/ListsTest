@@ -84,7 +84,7 @@ src/lib/preinstall:
 src/lib/CMakeFiles/ListsTestLib.dir/all:
 	$(MAKE) -f src/lib/CMakeFiles/ListsTestLib.dir/build.make src/lib/CMakeFiles/ListsTestLib.dir/depend
 	$(MAKE) -f src/lib/CMakeFiles/ListsTestLib.dir/build.make src/lib/CMakeFiles/ListsTestLib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/rbc-laptop/Documents/GitHub/ListsTest/build_linux/CMakeFiles --progress-num=3,4,5,6,7,8 "Built target ListsTestLib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/rbc-laptop/Documents/GitHub/ListsTest/build_linux/CMakeFiles --progress-num=3,4,5,6,7,8,9,10,11 "Built target ListsTestLib"
 .PHONY : src/lib/CMakeFiles/ListsTestLib.dir/all
 
 # Include target in all.
@@ -94,7 +94,7 @@ all: src/lib/CMakeFiles/ListsTestLib.dir/all
 
 # Build rule for subdir invocation for target.
 src/lib/CMakeFiles/ListsTestLib.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rbc-laptop/Documents/GitHub/ListsTest/build_linux/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rbc-laptop/Documents/GitHub/ListsTest/build_linux/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 src/lib/CMakeFiles/ListsTestLib.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rbc-laptop/Documents/GitHub/ListsTest/build_linux/CMakeFiles 0
 .PHONY : src/lib/CMakeFiles/ListsTestLib.dir/rule
@@ -149,7 +149,7 @@ all: src/app/CMakeFiles/ListsTest.dir/all
 
 # Build rule for subdir invocation for target.
 src/app/CMakeFiles/ListsTest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rbc-laptop/Documents/GitHub/ListsTest/build_linux/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rbc-laptop/Documents/GitHub/ListsTest/build_linux/CMakeFiles 11
 	$(MAKE) -f CMakeFiles/Makefile2 src/app/CMakeFiles/ListsTest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rbc-laptop/Documents/GitHub/ListsTest/build_linux/CMakeFiles 0
 .PHONY : src/app/CMakeFiles/ListsTest.dir/rule

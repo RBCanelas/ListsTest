@@ -61,7 +61,7 @@ contains
 
   end subroutine addValue
 
-  subroutine addInteger(this, value) 
+  subroutine addInteger(this, value)
    class(list) :: this
     integer value
     class(*), allocatable :: v
@@ -107,4 +107,4 @@ contains
     endif
   end function isEmpty
 
-end module list_mod 
+end module list_mod

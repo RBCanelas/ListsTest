@@ -5,4 +5,5 @@
 
 src/app/CMakeFiles/ListsTest.dir/main.f90.o: src/lib/CMakeFiles/ListsTestLib.dir/integer_list_mod.mod.stamp
 src/app/CMakeFiles/ListsTest.dir/main.f90.o: src/lib/CMakeFiles/ListsTestLib.dir/list_mod.mod.stamp
+src/app/CMakeFiles/ListsTest.dir/main.f90.o: src/lib/CMakeFiles/ListsTestLib.dir/shape_array_mod.mod.stamp
 src/app/CMakeFiles/ListsTest.dir/main.f90.o: src/lib/CMakeFiles/ListsTestLib.dir/types_mod.mod.stamp

@@ -2,6 +2,7 @@
 
     use list_mod
     use integer_list_mod
+    use shape_array_mod
     use types_mod
 
     implicit none
@@ -9,6 +10,7 @@
     integer i
     type(list) :: simple_list
     type(integerList) :: int_list
+    type(shapeArray)  :: shp_array
     integer values(10)
     type(shape) :: square
 
@@ -19,16 +21,15 @@
     do i=1, 10
         call simple_list%add(i)
     enddo
-
-    print*, "From the list implementation"
+    call simple_list%addValue(square)
     call simple_list%add(1.23)
     call simple_list%add('A')
     call simple_list%add('B')
     call simple_list%add('C')
-    call simple_list%addValue(square)
 
     square%id=-8
 
+    print*, "From the list implementation"
     call simple_list%printvalues()
 
     !integer list (derived from the abstract list)
@@ -51,5 +52,12 @@
 
     print*, "Recovering the values to a variable and printing"
     print *, values
+
+    !shapeArray Tests
+    !shp_array = shapeArray(20)
+    do i=1, 10
+
+    enddo
+
 
     end program TestsList

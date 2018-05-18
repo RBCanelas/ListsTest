@@ -57,9 +57,22 @@ include src/lib/CMakeFiles/ListsTestLib.dir/progress.make
 # Include the compile flags for this target's objects.
 include src/lib/CMakeFiles/ListsTestLib.dir/flags.make
 
+src/lib/CMakeFiles/ListsTestLib.dir/abstract_container_array.f90.o: src/lib/CMakeFiles/ListsTestLib.dir/flags.make
+src/lib/CMakeFiles/ListsTestLib.dir/abstract_container_array.f90.o: ../src/lib/abstract_container_array.f90
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rbc-laptop/Documents/GitHub/ListsTest/build_linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building Fortran object src/lib/CMakeFiles/ListsTestLib.dir/abstract_container_array.f90.o"
+	cd /Users/rbc-laptop/Documents/GitHub/ListsTest/build_linux/src/lib && /Users/rbc-laptop/local/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /Users/rbc-laptop/Documents/GitHub/ListsTest/src/lib/abstract_container_array.f90 -o CMakeFiles/ListsTestLib.dir/abstract_container_array.f90.o
+
+src/lib/CMakeFiles/ListsTestLib.dir/abstract_container_array.f90.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing Fortran source to CMakeFiles/ListsTestLib.dir/abstract_container_array.f90.i"
+	cd /Users/rbc-laptop/Documents/GitHub/ListsTest/build_linux/src/lib && /Users/rbc-laptop/local/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -E /Users/rbc-laptop/Documents/GitHub/ListsTest/src/lib/abstract_container_array.f90 > CMakeFiles/ListsTestLib.dir/abstract_container_array.f90.i
+
+src/lib/CMakeFiles/ListsTestLib.dir/abstract_container_array.f90.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling Fortran source to assembly CMakeFiles/ListsTestLib.dir/abstract_container_array.f90.s"
+	cd /Users/rbc-laptop/Documents/GitHub/ListsTest/build_linux/src/lib && /Users/rbc-laptop/local/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /Users/rbc-laptop/Documents/GitHub/ListsTest/src/lib/abstract_container_array.f90 -o CMakeFiles/ListsTestLib.dir/abstract_container_array.f90.s
+
 src/lib/CMakeFiles/ListsTestLib.dir/abstract_list.f90.o: src/lib/CMakeFiles/ListsTestLib.dir/flags.make
 src/lib/CMakeFiles/ListsTestLib.dir/abstract_list.f90.o: ../src/lib/abstract_list.f90
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rbc-laptop/Documents/GitHub/ListsTest/build_linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building Fortran object src/lib/CMakeFiles/ListsTestLib.dir/abstract_list.f90.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rbc-laptop/Documents/GitHub/ListsTest/build_linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building Fortran object src/lib/CMakeFiles/ListsTestLib.dir/abstract_list.f90.o"
 	cd /Users/rbc-laptop/Documents/GitHub/ListsTest/build_linux/src/lib && /Users/rbc-laptop/local/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /Users/rbc-laptop/Documents/GitHub/ListsTest/src/lib/abstract_list.f90 -o CMakeFiles/ListsTestLib.dir/abstract_list.f90.o
 
 src/lib/CMakeFiles/ListsTestLib.dir/abstract_list.f90.i: cmake_force
@@ -70,9 +83,22 @@ src/lib/CMakeFiles/ListsTestLib.dir/abstract_list.f90.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling Fortran source to assembly CMakeFiles/ListsTestLib.dir/abstract_list.f90.s"
 	cd /Users/rbc-laptop/Documents/GitHub/ListsTest/build_linux/src/lib && /Users/rbc-laptop/local/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /Users/rbc-laptop/Documents/GitHub/ListsTest/src/lib/abstract_list.f90 -o CMakeFiles/ListsTestLib.dir/abstract_list.f90.s
 
+src/lib/CMakeFiles/ListsTestLib.dir/container.f90.o: src/lib/CMakeFiles/ListsTestLib.dir/flags.make
+src/lib/CMakeFiles/ListsTestLib.dir/container.f90.o: ../src/lib/container.f90
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rbc-laptop/Documents/GitHub/ListsTest/build_linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building Fortran object src/lib/CMakeFiles/ListsTestLib.dir/container.f90.o"
+	cd /Users/rbc-laptop/Documents/GitHub/ListsTest/build_linux/src/lib && /Users/rbc-laptop/local/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /Users/rbc-laptop/Documents/GitHub/ListsTest/src/lib/container.f90 -o CMakeFiles/ListsTestLib.dir/container.f90.o
+
+src/lib/CMakeFiles/ListsTestLib.dir/container.f90.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing Fortran source to CMakeFiles/ListsTestLib.dir/container.f90.i"
+	cd /Users/rbc-laptop/Documents/GitHub/ListsTest/build_linux/src/lib && /Users/rbc-laptop/local/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -E /Users/rbc-laptop/Documents/GitHub/ListsTest/src/lib/container.f90 > CMakeFiles/ListsTestLib.dir/container.f90.i
+
+src/lib/CMakeFiles/ListsTestLib.dir/container.f90.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling Fortran source to assembly CMakeFiles/ListsTestLib.dir/container.f90.s"
+	cd /Users/rbc-laptop/Documents/GitHub/ListsTest/build_linux/src/lib && /Users/rbc-laptop/local/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /Users/rbc-laptop/Documents/GitHub/ListsTest/src/lib/container.f90 -o CMakeFiles/ListsTestLib.dir/container.f90.s
+
 src/lib/CMakeFiles/ListsTestLib.dir/integer_list.f90.o: src/lib/CMakeFiles/ListsTestLib.dir/flags.make
 src/lib/CMakeFiles/ListsTestLib.dir/integer_list.f90.o: ../src/lib/integer_list.f90
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rbc-laptop/Documents/GitHub/ListsTest/build_linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building Fortran object src/lib/CMakeFiles/ListsTestLib.dir/integer_list.f90.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rbc-laptop/Documents/GitHub/ListsTest/build_linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building Fortran object src/lib/CMakeFiles/ListsTestLib.dir/integer_list.f90.o"
 	cd /Users/rbc-laptop/Documents/GitHub/ListsTest/build_linux/src/lib && /Users/rbc-laptop/local/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /Users/rbc-laptop/Documents/GitHub/ListsTest/src/lib/integer_list.f90 -o CMakeFiles/ListsTestLib.dir/integer_list.f90.o
 
 src/lib/CMakeFiles/ListsTestLib.dir/integer_list.f90.i: cmake_force
@@ -85,7 +111,7 @@ src/lib/CMakeFiles/ListsTestLib.dir/integer_list.f90.s: cmake_force
 
 src/lib/CMakeFiles/ListsTestLib.dir/link.f90.o: src/lib/CMakeFiles/ListsTestLib.dir/flags.make
 src/lib/CMakeFiles/ListsTestLib.dir/link.f90.o: ../src/lib/link.f90
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rbc-laptop/Documents/GitHub/ListsTest/build_linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building Fortran object src/lib/CMakeFiles/ListsTestLib.dir/link.f90.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rbc-laptop/Documents/GitHub/ListsTest/build_linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building Fortran object src/lib/CMakeFiles/ListsTestLib.dir/link.f90.o"
 	cd /Users/rbc-laptop/Documents/GitHub/ListsTest/build_linux/src/lib && /Users/rbc-laptop/local/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /Users/rbc-laptop/Documents/GitHub/ListsTest/src/lib/link.f90 -o CMakeFiles/ListsTestLib.dir/link.f90.o
 
 src/lib/CMakeFiles/ListsTestLib.dir/link.f90.i: cmake_force
@@ -98,7 +124,7 @@ src/lib/CMakeFiles/ListsTestLib.dir/link.f90.s: cmake_force
 
 src/lib/CMakeFiles/ListsTestLib.dir/list.f90.o: src/lib/CMakeFiles/ListsTestLib.dir/flags.make
 src/lib/CMakeFiles/ListsTestLib.dir/list.f90.o: ../src/lib/list.f90
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rbc-laptop/Documents/GitHub/ListsTest/build_linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building Fortran object src/lib/CMakeFiles/ListsTestLib.dir/list.f90.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rbc-laptop/Documents/GitHub/ListsTest/build_linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building Fortran object src/lib/CMakeFiles/ListsTestLib.dir/list.f90.o"
 	cd /Users/rbc-laptop/Documents/GitHub/ListsTest/build_linux/src/lib && /Users/rbc-laptop/local/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /Users/rbc-laptop/Documents/GitHub/ListsTest/src/lib/list.f90 -o CMakeFiles/ListsTestLib.dir/list.f90.o
 
 src/lib/CMakeFiles/ListsTestLib.dir/list.f90.i: cmake_force
@@ -109,9 +135,22 @@ src/lib/CMakeFiles/ListsTestLib.dir/list.f90.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling Fortran source to assembly CMakeFiles/ListsTestLib.dir/list.f90.s"
 	cd /Users/rbc-laptop/Documents/GitHub/ListsTest/build_linux/src/lib && /Users/rbc-laptop/local/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /Users/rbc-laptop/Documents/GitHub/ListsTest/src/lib/list.f90 -o CMakeFiles/ListsTestLib.dir/list.f90.s
 
+src/lib/CMakeFiles/ListsTestLib.dir/shape_array.f90.o: src/lib/CMakeFiles/ListsTestLib.dir/flags.make
+src/lib/CMakeFiles/ListsTestLib.dir/shape_array.f90.o: ../src/lib/shape_array.f90
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rbc-laptop/Documents/GitHub/ListsTest/build_linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building Fortran object src/lib/CMakeFiles/ListsTestLib.dir/shape_array.f90.o"
+	cd /Users/rbc-laptop/Documents/GitHub/ListsTest/build_linux/src/lib && /Users/rbc-laptop/local/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /Users/rbc-laptop/Documents/GitHub/ListsTest/src/lib/shape_array.f90 -o CMakeFiles/ListsTestLib.dir/shape_array.f90.o
+
+src/lib/CMakeFiles/ListsTestLib.dir/shape_array.f90.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing Fortran source to CMakeFiles/ListsTestLib.dir/shape_array.f90.i"
+	cd /Users/rbc-laptop/Documents/GitHub/ListsTest/build_linux/src/lib && /Users/rbc-laptop/local/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -E /Users/rbc-laptop/Documents/GitHub/ListsTest/src/lib/shape_array.f90 > CMakeFiles/ListsTestLib.dir/shape_array.f90.i
+
+src/lib/CMakeFiles/ListsTestLib.dir/shape_array.f90.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling Fortran source to assembly CMakeFiles/ListsTestLib.dir/shape_array.f90.s"
+	cd /Users/rbc-laptop/Documents/GitHub/ListsTest/build_linux/src/lib && /Users/rbc-laptop/local/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -S /Users/rbc-laptop/Documents/GitHub/ListsTest/src/lib/shape_array.f90 -o CMakeFiles/ListsTestLib.dir/shape_array.f90.s
+
 src/lib/CMakeFiles/ListsTestLib.dir/types.f90.o: src/lib/CMakeFiles/ListsTestLib.dir/flags.make
 src/lib/CMakeFiles/ListsTestLib.dir/types.f90.o: ../src/lib/types.f90
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rbc-laptop/Documents/GitHub/ListsTest/build_linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building Fortran object src/lib/CMakeFiles/ListsTestLib.dir/types.f90.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rbc-laptop/Documents/GitHub/ListsTest/build_linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building Fortran object src/lib/CMakeFiles/ListsTestLib.dir/types.f90.o"
 	cd /Users/rbc-laptop/Documents/GitHub/ListsTest/build_linux/src/lib && /Users/rbc-laptop/local/bin/gfortran $(Fortran_DEFINES) $(Fortran_INCLUDES) $(Fortran_FLAGS) -c /Users/rbc-laptop/Documents/GitHub/ListsTest/src/lib/types.f90 -o CMakeFiles/ListsTestLib.dir/types.f90.o
 
 src/lib/CMakeFiles/ListsTestLib.dir/types.f90.i: cmake_force
@@ -124,23 +163,29 @@ src/lib/CMakeFiles/ListsTestLib.dir/types.f90.s: cmake_force
 
 # Object files for target ListsTestLib
 ListsTestLib_OBJECTS = \
+"CMakeFiles/ListsTestLib.dir/abstract_container_array.f90.o" \
 "CMakeFiles/ListsTestLib.dir/abstract_list.f90.o" \
+"CMakeFiles/ListsTestLib.dir/container.f90.o" \
 "CMakeFiles/ListsTestLib.dir/integer_list.f90.o" \
 "CMakeFiles/ListsTestLib.dir/link.f90.o" \
 "CMakeFiles/ListsTestLib.dir/list.f90.o" \
+"CMakeFiles/ListsTestLib.dir/shape_array.f90.o" \
 "CMakeFiles/ListsTestLib.dir/types.f90.o"
 
 # External object files for target ListsTestLib
 ListsTestLib_EXTERNAL_OBJECTS =
 
+lib/libListsTestLib.a: src/lib/CMakeFiles/ListsTestLib.dir/abstract_container_array.f90.o
 lib/libListsTestLib.a: src/lib/CMakeFiles/ListsTestLib.dir/abstract_list.f90.o
+lib/libListsTestLib.a: src/lib/CMakeFiles/ListsTestLib.dir/container.f90.o
 lib/libListsTestLib.a: src/lib/CMakeFiles/ListsTestLib.dir/integer_list.f90.o
 lib/libListsTestLib.a: src/lib/CMakeFiles/ListsTestLib.dir/link.f90.o
 lib/libListsTestLib.a: src/lib/CMakeFiles/ListsTestLib.dir/list.f90.o
+lib/libListsTestLib.a: src/lib/CMakeFiles/ListsTestLib.dir/shape_array.f90.o
 lib/libListsTestLib.a: src/lib/CMakeFiles/ListsTestLib.dir/types.f90.o
 lib/libListsTestLib.a: src/lib/CMakeFiles/ListsTestLib.dir/build.make
 lib/libListsTestLib.a: src/lib/CMakeFiles/ListsTestLib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/rbc-laptop/Documents/GitHub/ListsTest/build_linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking Fortran static library ../../lib/libListsTestLib.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/rbc-laptop/Documents/GitHub/ListsTest/build_linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking Fortran static library ../../lib/libListsTestLib.a"
 	cd /Users/rbc-laptop/Documents/GitHub/ListsTest/build_linux/src/lib && $(CMAKE_COMMAND) -P CMakeFiles/ListsTestLib.dir/cmake_clean_target.cmake
 	cd /Users/rbc-laptop/Documents/GitHub/ListsTest/build_linux/src/lib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ListsTestLib.dir/link.txt --verbose=$(VERBOSE)
 
