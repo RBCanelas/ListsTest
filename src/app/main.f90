@@ -57,21 +57,21 @@
 
     !shapeArray Tests
     test_spots = 5
-    call shp_array.init(test_spots)
+    call shp_array%init(test_spots)
     do i=1, test_spots
         square%id = i
         call shp_array%addValue(i, square)
     enddo
-    
+
     print*, "From our amazing container array!"
     call shp_array%printArray()
-    
+
     round%id = 517
     round%radius = 1.78
     round%filled = .false.
-    
+
     call shp_array%addValue(1, round)
     print*, "Putting back a value on our amazing container array!"
     call shp_array%printArray()
-    
+
     end program TestsList

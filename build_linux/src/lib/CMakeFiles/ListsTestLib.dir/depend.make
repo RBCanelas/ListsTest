@@ -19,7 +19,6 @@ src/lib/CMakeFiles/ListsTestLib.dir/abstract_list.f90.o.provides.build:
 	$(CMAKE_COMMAND) -E touch src/lib/CMakeFiles/ListsTestLib.dir/abstract_list.f90.o.provides.build
 src/lib/CMakeFiles/ListsTestLib.dir/build: src/lib/CMakeFiles/ListsTestLib.dir/abstract_list.f90.o.provides.build
 
-src/lib/CMakeFiles/ListsTestLib.dir/container.f90.o: src/lib/CMakeFiles/ListsTestLib.dir/types_mod.mod.stamp
 src/lib/CMakeFiles/ListsTestLib.dir/container.f90.o.provides.build: src/lib/CMakeFiles/ListsTestLib.dir/container_mod.mod.stamp
 src/lib/CMakeFiles/ListsTestLib.dir/container_mod.mod.stamp: src/lib/CMakeFiles/ListsTestLib.dir/container.f90.o
 	$(CMAKE_COMMAND) -E cmake_copy_f90_mod modules/container_mod src/lib/CMakeFiles/ListsTestLib.dir/container_mod.mod.stamp GNU
@@ -52,6 +51,7 @@ src/lib/CMakeFiles/ListsTestLib.dir/list.f90.o.provides.build:
 src/lib/CMakeFiles/ListsTestLib.dir/build: src/lib/CMakeFiles/ListsTestLib.dir/list.f90.o.provides.build
 
 src/lib/CMakeFiles/ListsTestLib.dir/shape_array.f90.o: src/lib/CMakeFiles/ListsTestLib.dir/container_mod.mod.stamp
+src/lib/CMakeFiles/ListsTestLib.dir/shape_array.f90.o: src/lib/CMakeFiles/ListsTestLib.dir/types_mod.mod.stamp
 src/lib/CMakeFiles/ListsTestLib.dir/shape_array.f90.o.provides.build: src/lib/CMakeFiles/ListsTestLib.dir/shape_array_mod.mod.stamp
 src/lib/CMakeFiles/ListsTestLib.dir/shape_array_mod.mod.stamp: src/lib/CMakeFiles/ListsTestLib.dir/shape_array.f90.o
 	$(CMAKE_COMMAND) -E cmake_copy_f90_mod modules/shape_array_mod src/lib/CMakeFiles/ListsTestLib.dir/shape_array_mod.mod.stamp GNU

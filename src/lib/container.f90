@@ -24,7 +24,7 @@ contains
     class(*), pointer :: getValue
     getValue => this%value
   end function getValue
-  
+
   subroutine storeValue(this,to_store)
     class(container) :: this
     class(*) :: to_store
@@ -39,7 +39,7 @@ contains
     type is (character(*))
       print *, v(1:1)
     type is (real)
-      print *, v    
+      print *, v
       class default
       stop 'printLink: unexepected type for container content printing'
     end select
