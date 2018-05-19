@@ -8,8 +8,8 @@ module container_mod
     private
     class(*), pointer :: value => null() ! value stored in container
   contains
-    procedure :: getValue    ! return value pointer
-    procedure :: storeValue  !put in the container
+    procedure :: getContent    ! return value pointer
+    procedure :: storeContent  !put in the container
     procedure :: printContainer  ! print container contents
   end type container
 
@@ -19,17 +19,17 @@ module container_mod
 
 contains
 
-  function getValue(this)
+  function getContent(this)
     class(container) :: this
-    class(*), pointer :: getValue
-    getValue => this%value
-  end function getValue
+    class(*), pointer :: getContent
+    getContent => this%value
+  end function getContent
 
-  subroutine storeValue(this,to_store)
+  subroutine storeContent(this,to_store)
     class(container) :: this
     class(*) :: to_store
     allocate(this%value, source=to_store)
-  end subroutine storeValue
+  end subroutine storeContent
 
   subroutine printContainer(this)
     class(container) :: this

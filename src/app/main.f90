@@ -60,7 +60,7 @@
     call shp_array%init(test_spots)
     do i=1, test_spots
         square%id = i
-        call shp_array%addValue(i, square)
+        call shp_array%put(i, square)
     enddo
 
     print*, "From our amazing container array!"
@@ -70,8 +70,20 @@
     round%radius = 1.78
     round%filled = .false.
 
-    call shp_array%addValue(1, round)
+    call shp_array%put(1, round)
     print*, "Putting back a value on our amazing container array!"
     call shp_array%printArray()
+
+    test_spots=3
+    call shp_array%resize(test_spots)
+    do i=6, test_spots
+        square%id = i
+        call shp_array%put(i, square)
+    enddo
+
+    print*, "From our amazing resized container array!"
+    call shp_array%printArray()
+    call shp_array%printElement(1)
+    call shp_array%printElement(5)
 
     end program TestsList
