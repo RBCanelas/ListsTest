@@ -1,55 +1,115 @@
-module container_mod
+    !MARETEC - Research Centre for Marine, Environment and Technology
+    !Copyright (C) 2018  Ricardo Birjukovs Canelas
+    !
+    !This program is free software: you can redistribute it and/or modify
+    !it under the terms of the GNU General Public License as published by
+    !the Free Software Foundation, either version 3 of the License, or
+    !(at your option) any later version.
+    !
+    !This program is distributed in the hope that it will be useful,
+    !but WITHOUT ANY WARRANTY; without even the implied warranty of
+    !MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    !GNU General Public License for more details.
+    !
+    !You should have received a copy of the GNU General Public License
+    !along with this program.  If not, see <https://www.gnu.org/licenses/>.
+    
+    !------------------------------------------------------------------------------
+    !        IST/MARETEC, Water Modelling Group, Mohid modelling system
+    !------------------------------------------------------------------------------
+    !
+    ! AFFILIATION   : IST/MARETEC, Marine Modelling Group
+    ! DATE          : May 2018
+    ! REVISION      : Canelas 0.2
+    !> @author
+    !> Ricardo Birjukovs Canelas
+    !
+    ! DESCRIPTION:
+    !> Module that defines an unlimited polymorphic container class and related methods. 
+    !> A container is a fundamental entity allowing to build data structures such as lists
+    !> and arrays.
+    !------------------------------------------------------------------------------
 
-  implicit none
-  private
-  public :: container
+    module container_mod
 
-  type container
+    implicit none
     private
-    class(*), pointer :: value => null() ! value stored in container
-  contains
-    procedure :: getContent    ! return value pointer
-    procedure :: storeContent  !put in the container
-    procedure :: printContainer  ! print container contents
-  end type container
+    !Public access vars
+    public :: container
 
-  interface container
-    procedure constructor ! construct/initialize a container
-  end interface
+    type container !< Unlimited polymorphic container class 
+        private !contents are only accessible trough the methods, no direct access is allowed
+        class(*), pointer :: value => null() !< value stored in container
+    contains
+    procedure :: getContent     !< returns stored content (pointer)
+    procedure :: storeContent   !< stores the provided values (sourced allocation)
+    procedure :: printContainer !< prints container contents (only primitive types implemented)
+    end type container
 
-contains
+    interface container
+        procedure constructor !< construct/initialize a container
+    end interface
 
-  function getContent(this)
+    contains
+    
+    !---------------------------------------------------------------------------
+    !> @Ricardo Birjukovs Canelas - MARETEC
+    !> @brief
+    !> Method that returns a pointer to the values stored in the container
+    !> @param[this]
+    !---------------------------------------------------------------------------
+    function getContent(this)
     class(container) :: this
     class(*), pointer :: getContent
     getContent => this%value
-  end function getContent
+    end function getContent
 
-  subroutine storeContent(this,to_store)
+    !---------------------------------------------------------------------------
+    !> @Ricardo Birjukovs Canelas - MARETEC
+    !> @brief
+    !> Method that stores the provided value in the container using 
+    !> sourced allocation
+    !> @param[this, to_store]
+    !---------------------------------------------------------------------------
+    subroutine storeContent(this,to_store)
     class(container) :: this
     class(*) :: to_store
     allocate(this%value, source=to_store)
-  end subroutine storeContent
-
-  subroutine printContainer(this)
+    end subroutine storeContent
+    
+    !---------------------------------------------------------------------------
+    !> @Ricardo Birjukovs Canelas - MARETEC
+    !> @brief
+    !> Method to print the stored value. Only knows about instrinsic types, 
+    !> ignores (but warns) if other types are passed.
+    !> @param[this]
+    !---------------------------------------------------------------------------
+    subroutine printContainer(this)
     class(container) :: this
     select type(v => this%value)
     type is (integer)
-      print *, v
+        print *, v
     type is (character(*))
-      print *, v(1:1)
+        print *, v(1:1)
     type is (real)
-      print *, v
-      class default
-      stop 'printLink: unexepected type for container content printing'
+        print *, v
+        class default
+        print*, "[printContainer]: don't know how to print this value, ignoring"
     end select
-  end subroutine printContainer
+    end subroutine printContainer
 
-  function constructor(value)
+    !---------------------------------------------------------------------------
+    !> @Ricardo Birjukovs Canelas - MARETEC
+    !> @brief
+    !> Container constructor, can be used with the 'container' name since it is 
+    !> defined as an interface
+    !> @param[to_store]
+    !---------------------------------------------------------------------------
+    function constructor(to_store)
     class(container),pointer :: constructor
-    class(*) :: value
+    class(*) :: to_store
     allocate(constructor)
-    allocate(constructor%value, source=value)
-  end function constructor
+    allocate(constructor%value, source=to_store)
+    end function constructor
 
-end module container_mod
+    end module container_mod
